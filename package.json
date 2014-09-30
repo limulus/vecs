@@ -1,0 +1,22 @@
+{
+  "name": "vecs",
+  "version": "1.0.0",
+  "description": "A thin JavaScript library for SVG element creation and manipulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limulus/vecs.git"
+  },
+  "keywords": [
+    "svg"
+  ],
+  "author": "Eric McCarthy <eric@limulus.net> (http://www.limulus.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limulus/vecs/issues"
+  },
+  "homepage": "https://github.com/limulus/vecs"
+}
