@@ -1,6 +1,6 @@
 {
   "name": "vecs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A thin JavaScript library for SVG element creation and manipulation",
   "main": "index.js",
   "scripts": {
