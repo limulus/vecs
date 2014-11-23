@@ -125,6 +125,10 @@ Add a straight line from the previous point in the path, relative to that point.
 
 Add a quadratic Bezier curve to the path. The control point and the end points are relative to the previous point in the path.
 
+#### .addRawCommandString(commandString)
+
+Add a raw SVG path command string to the path. Useful for ad-hoc data or pre-computed data like raw text paths.
+
 #### .preventClose()
 
 Prevent the path from closing (and being filled with a fill color).
