@@ -5,7 +5,7 @@ A thin JavaScript library for SVG element creation and manipulation.
 ## Philosophy
 
   - Works with CommonJS bundlers
-  - Provides a class heirarchy to SVG DOM elements
+  - Provides a class hierarchy to SVG DOM elements
   - Functionality is added on an as-needed basis
 
 ## Installation
