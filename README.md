@@ -45,6 +45,10 @@ Set the coordinates of the element. This is just like setting the `x` and `y` at
 
 Removes the element from its parent.
 
+#### .viewportDimensions()
+
+Returns an object containing the dimensions of the `<svg>` element's viewport. If the object is not an `<svg>` element, the viewport dimensions to which the element belongs to will be returned. The properties of the returned index are numbers named `x`, `y`, `width`, `height`.
+
 ### new vecs.SVGRoot(width, height)
 
 The class for `<svg>` elements. The values for `width` and `height` parameters should be integers. Their units are pixels.
@@ -65,13 +69,13 @@ Sets the `viewBox` attribute.
 
 Sets the `perserveAspectRatio` attribute.
 
+#### .add(svgObj)
+
+Add the given `svgObj` (which should inherit from `SVGElement`) to the root element. Use `addAt()` to add an object and position it at the same time.
+
 #### .addAt(svgObj, x, y)
 
 Add the given `svgObj` (which should inherit from `SVGElement`) to the root element at the given coordinates.
-
-#### .viewportDimensions()
-
-Returns an object containing the dimensions of the `<svg>` element's viewport. The properties of the returned index are numbers named `x`, `y`, `width`, `height`.
 
 ### vecs.SVGShape
 
@@ -132,3 +136,16 @@ Add a raw SVG path command string to the path. Useful for ad-hoc data or pre-com
 #### .preventClose()
 
 Prevent the path from closing (and being filled with a fill color).
+
+### new vecs.SVGGroup()
+
+Create a new `<g>` element for grouping SVG elements. Inherits from `SVGElement`.
+
+#### .add(svgObj)
+
+Add the given `svgObj` (which should inherit from `SVGElement`) to the group.
+
+
+#### .addAt(svgObj, x, y)
+
+Add the given `svgObj` (which should inherit from `SVGElement`) to the group at the given coordinates.
