@@ -37,6 +37,10 @@ Returns the raw SVG DOM element.
 
 Returns the tag name of the SVG element. It is guaranteed to be all lowercase.
 
+#### .setId(id)
+
+Set the `id` attribute on the element to the given `id` parameter.
+
 #### .setCoords(x, y)
 
 Set the coordinates of the element. This is just like setting the `x` and `y` attributes for most SVG elements, but handles special cases like `<circle>` and `<path>`.
@@ -76,6 +80,10 @@ Add the given `svgObj` (which should inherit from `SVGElement`) to the root elem
 #### .addAt(svgObj, x, y)
 
 Add the given `svgObj` (which should inherit from `SVGElement`) to the root element at the given coordinates.
+
+#### .addDefinition(svgObj, [id])
+
+Add the given `svgObj` (which should inherit from `SVGElement`) to the root element's definition list (`<defs>`). If `id` is supplied, it will set the `id` attribute on the `svgObj`.
 
 ### vecs.SVGShape
 
