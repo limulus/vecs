@@ -87,7 +87,7 @@ Add the given `svgObj` (which should inherit from `SVGElement`) to the root elem
 
 ### vecs.SVGShape
 
-Base class for all the elements that could be considered "shapes" (`SVGRect`, `SVGPolygon`, `SVGPath`, etc). Inherits from `SVGElement`.
+Base class for all the elements that could be considered "shapes" (`SVGRect`, `SVGPolygon`, `SVGPath`, etc). Inherits from `SVGElement`. You should not need to directly call this class's constructor.
 
 #### .setStrokeColor(color)
 
@@ -147,12 +147,19 @@ Prevent the path from closing (and being filled with a fill color).
 
 ### new vecs.SVGGroup()
 
-Create a new `<g>` element for grouping SVG elements. Inherits from `SVGElement`.
+Create a new `<g>` element for grouping SVG elements. Inherits from `SVGContainerElement`.
+
+### new vecs.SVGClipPath()
+
+Create a new `<clipPath>` element for defining a clipping path. Inherits from `SVGContainerElement`.
+
+### vecs.SVGContainerElement
+
+Base class for all elements that essentially act as containers for other SVG elements, such as `SVGRoot`, `SVGGroup`, `SVGClipPath`. It inherits from `SVGElement`. You should not need to directly call this class's constructor.
 
 #### .add(svgObj)
 
 Add the given `svgObj` (which should inherit from `SVGElement`) to the group.
-
 
 #### .addAt(svgObj, x, y)
 
