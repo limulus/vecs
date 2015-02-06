@@ -164,3 +164,7 @@ Add the given `svgObj` (which should inherit from `SVGElement`) to the group.
 #### .addAt(svgObj, x, y)
 
 Add the given `svgObj` (which should inherit from `SVGElement`) to the group at the given coordinates.
+
+#### .setClipPathId(id)
+
+Set the `clip-path` attribute of the element to the given `id`. This should be the `id` you've given an `SVGClipPath` element, which has been added as a definition to the `SVGRoot` element.
