@@ -85,6 +85,10 @@ Add the given `svgObj` (which should inherit from `SVGElement`) to the root elem
 
 Add the given `svgObj` (which should inherit from `SVGElement`) to the root element's definition list (`<defs>`). If `id` is supplied, it will set the `id` attribute on the `svgObj`.
 
+#### .clippedDrawingGroup()
+
+Returns an `SVGGroup` object that is clipped to the bounds of the `viewBox`, creating it if it doesn't exist. This is useful for creating images that should not draw outside of their `viewBox`. Just add shapes to this group object instead of the root object.
+
 ### vecs.SVGShape
 
 Base class for all the elements that could be considered "shapes" (`SVGRect`, `SVGPolygon`, `SVGPath`, etc). Inherits from `SVGElement`. You should not need to directly call this class's constructor.
