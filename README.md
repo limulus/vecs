@@ -97,6 +97,10 @@ Base class for all the elements that could be considered "shapes" (`SVGRect`, `S
 
 Sets the stroke color of the element to the given CSS color string.
 
+#### .setStrokeOpacity(decimal)
+
+Set the opacity of the stroke as a decimal where 0 is invisible and 1 is opaque.
+
 #### .setStrokeWidth(width)
 
 Sets the stroke width to the given number.
@@ -108,6 +112,10 @@ Set thes the `stroke-linecap` attribute of the element. Valid type strings are `
 #### .setFillColor(color)
 
 Sets the fill color of the element to the given CSS color string.
+
+#### .setFillOpacity(decimal)
+
+Set the opacity of the fill as a decimal where 0 is invisible and 1 is opaque.
 
 ### new vecs.SVGCircle(radius)
 
